@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar-brand span {
+    color: red;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Progress Circle Styles */
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto 1rem auto;
+}
+
+.progress-circle::before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+}
+
+.progress-circle .circle-value {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.progress-circle[data-progress="87"] {
+    background: conic-gradient(red 0% 87%, #f8f9fa 87%);
+}
+
+.progress-circle[data-progress="95"] {
+    background: conic-gradient(green 0% 95%, #f8f9fa 95%);
+}
+
+.progress-circle[data-progress="90"] {
+    background: conic-gradient(orange 0% 90%, #f8f9fa 90%);
+}
+
+.progress-circle[data-progress="80"] {
+    background: conic-gradient(blue 0% 80%, #f8f9fa 80%);
+}
+
+/* Program Card Styles */
+.program-card {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-card::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.5rem;
+}
+
+.program-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-register {
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.product-card-body {
+    padding: 1rem;
+}
+
+.product-card-body h5 {
+    margin: 0 0 0.5rem 0;
+}
+
+.product-card-body .price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Highlighted Card Styles */
+.highlighted {
+    border: 2px solid blue;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    margin: 0 10px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.875rem;
+        padding: 5px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .progress-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .progress-circle .circle-value {
+        font-size: 1.2rem;
+    }
+
+    .program-card {
+        padding: 1rem;
+    }
+
+    .btn-register {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .product-card {
+        flex-direction: column;
+    }
+
+    .faq-section {
+        align-items: flex-start;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer Styles */
+footer.bg-light {
+    background-color: #f8f9fa !important;
+    color: #343a40;
+    padding: 40px 20px;
+    margin-top: 10px;
+}
+
+footer h3, footer h4 {
+    color: #343a40;
+}
+
+footer p, footer ul, footer li {
+    color: #6c757d;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer .fa-envelope, footer .fa-phone {
+    margin-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .col-md-3 {
+        max-width: 100%;
+    }
+}
+
